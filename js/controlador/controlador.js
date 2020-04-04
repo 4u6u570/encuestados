@@ -11,12 +11,17 @@ Controlador.prototype = {
   },
 
   borrarPregunta: function(id) {
+    console.log("controlador ID " + id);
     this.modelo.borrarPregunta(id);
   },
   editarPregunta: function(id) {
+    
     this.modelo.editarPregunta(id);
   },
   borrarTodo: function() {
     this.modelo.borrarTodo();
+  },
+  agregarVoto: function(pregunta , respuesta){
+    this.modelo.agregarVoto(pregunta, respuesta)
   }
 };
